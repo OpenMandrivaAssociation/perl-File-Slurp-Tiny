@@ -4,10 +4,10 @@
 Summary:	Simple perl module to slurp a file (use File::Slurper instead)
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		http://metacpan.org/pod/File::Slurp::Tiny
 Source0:	http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
