@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	5
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
-Url:		http://metacpan.org/pod/File::Slurp::Tiny
+Url:		https://metacpan.org/pod/File::Slurp::Tiny
 Source0:	http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
