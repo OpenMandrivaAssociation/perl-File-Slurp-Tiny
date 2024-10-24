@@ -1,14 +1,13 @@
 %define	modname	File-Slurp-Tiny
-%define	modver	0.004
 
 Summary:	Simple perl module to slurp a file (use File::Slurper instead)
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	6
+Version:	0.004
+Release:	1
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
 Url:		https://metacpan.org/pod/File::Slurp::Tiny
-Source0:	http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
@@ -20,17 +19,17 @@ This module is obsolete and provided for compatibility with
 legacy applications only. Use File::Slurper instead.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README Changes
