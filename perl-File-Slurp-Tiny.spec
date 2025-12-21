@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Url:		https://metacpan.org/pod/File::Slurp::Tiny
 Source0:	http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
